@@ -1,0 +1,12 @@
+.meal-form {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 20%;
+  margin-top: 1.5em;
+}
+
+@media (max-width: 700px) {
+  .meal-form {
+    flex-grow: 1;
+  }
+}

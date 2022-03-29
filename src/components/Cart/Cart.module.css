@@ -1,0 +1,54 @@
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.727);
+}
+
+.cart-content {
+  width: 40%;
+  margin: 10% auto;
+  text-align: center;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.76);
+}
+
+.cart-head {
+  text-align: start;
+  font-size: 1.5rem;
+  margin: 1em;
+}
+
+.cart-head h3 {
+  margin: 0;
+}
+
+.cart-data {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-total {
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1.3em;
+}
+
+.cart-total h3 {
+  margin: 0;
+}
+
+@media (max-width: 1013px) {
+  .cart-content {
+    width: 60%;
+    margin: 20% auto;
+  }
+}
+@media (max-width: 700px) {
+  .cart-content {
+    width: 100%;
+    margin: 30% auto;
+  }
+}

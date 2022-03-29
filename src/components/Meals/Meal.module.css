@@ -1,0 +1,36 @@
+.meal-li {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.76);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.411);
+}
+
+.meal-li h3 {
+  font-size: 1.3rem;
+  margin: 0;
+  margin-top: 1em;
+}
+
+.meal-desc {
+  color: rgba(0, 0, 0, 0.623);
+  margin: 0;
+  margin-top: 0.4em;
+  font-style: italic;
+}
+
+.meal-price {
+  font-size: 1.2rem;
+  margin: 0.8em 0;
+  margin-top: 0.4em;
+  color: #d44209;
+  font-weight: bold;
+}
+.meal-data {
+  flex-basis: 30%;
+}
+
+@media (max-width: 700px) {
+  .meal-data {
+    flex-grow: 3;
+  }
+}

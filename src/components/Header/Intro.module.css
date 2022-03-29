@@ -1,0 +1,21 @@
+.intro {
+  width: 45%;
+  margin: 0 auto;
+  margin-top: 7em;
+  padding: 1em 0.4em;
+  font-size: 1.1rem;
+  background-color: #3d3d3d;
+  color: white;
+  text-align: center;
+}
+
+.intro-h2 {
+  margin: 0;
+  margin-bottom: 1.2em;
+}
+
+@media (max-width: 1013px) {
+  .intro {
+    width: 80%;
+  }
+}

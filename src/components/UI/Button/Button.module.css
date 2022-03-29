@@ -1,0 +1,116 @@
+.button {
+  cursor: pointer;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+}
+
+.show-cart {
+  position: sticky;
+  cursor: pointer;
+  border-radius: 25px;
+  border: 1px solid #4d1601c9;
+  background-color: #4d1701c9;
+  margin: 0.5em;
+  padding: 0.5em 2em;
+  font-size: 1.3rem;
+  transition: margin ease-in-out 0.1s;
+}
+
+.show-cart:focus {
+  margin: 0.3em;
+}
+
+.cart-btn-close {
+  color: #4d1701;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 25px;
+  border: 1px solid #462012;
+  margin: 0.8em;
+  padding: 0.5em 1.3em;
+  font-size: 1.2rem;
+  transition: background-color ease-in 0.3s;
+  transition: color ease-in 0.2s;
+}
+
+.cart-btn-close:hover {
+  background-color: #5c1b01;
+  color: white;
+}
+
+.cart-btn-order {
+  color: white;
+  background-color: #4d1701;
+  cursor: pointer;
+  border-radius: 25px;
+  border: 1px solid #4d1701;
+  margin: 0.8em;
+  padding: 0.5em 1.3em;
+  font-size: 1.2rem;
+  transition: background-color ease-in 0.1s;
+}
+
+.cart-btn-order:hover {
+  background-color: #992b00;
+}
+
+.change-amount {
+  color: #d44209;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 12px;
+  border: 1px solid #d44209;
+  margin: 0 0.4em;
+  margin-bottom: 2em;
+  padding: 0.1em 1.1em;
+  font-size: 1.4rem;
+  transition: background-color ease-in 0.1s;
+  transition: color ease-in 0.08s;
+}
+
+.change-amount:hover {
+  background-color: #972d03;
+  color: white;
+}
+
+.change-amount:disabled {
+  background-color: transparent;
+  color: gray;
+  border-color: gray;
+  cursor: not-allowed;
+}
+
+.add-amount {
+  color: white;
+  background-color: #d44209;
+  cursor: pointer;
+  border-radius: 25px;
+  border: 1px solid #d44209;
+  margin: 0.8em;
+  margin-left: 2.5em;
+  padding: 0.2em 0.5em;
+  font-size: 1rem;
+  transition: background-color ease-in 0.1s;
+}
+
+.add-amount:hover {
+  background-color: #992b00;
+}
+
+@media (max-width: 1056px) {
+  .add-amount {
+    margin-left: 1em;
+  }
+}
+
+@media (max-width: 700px) {
+  .add-amount {
+    padding: 0.3em 1em;
+    margin: 0.8em 0.2em;
+  }
+
+  .show-cart {
+    padding: 0.1em 1em;
+  }
+}

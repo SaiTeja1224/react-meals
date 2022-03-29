@@ -1,0 +1,17 @@
+.meal-list {
+  width: 60%;
+  margin: 3em auto;
+  background-color: white;
+}
+
+.meal-list ul {
+  list-style: none;
+  padding: 1em 2em;
+  margin: 0;
+}
+
+@media (max-width: 1013px) {
+  .meal-list {
+    width: 100%;
+  }
+}

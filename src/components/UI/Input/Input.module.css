@@ -1,0 +1,26 @@
+.inp-label {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.76);
+}
+
+.input1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input1 input {
+  margin: 0;
+  padding: 0.2em 0;
+  margin-left: 1.5em;
+  width: 25%;
+  min-width: 25%;
+}
+
+@media (max-width: 420px) {
+  .input1 input {
+    width: 50%;
+    margin-left: 0.8em;
+  }
+}
