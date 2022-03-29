@@ -53,7 +53,7 @@ export const MealContextProvider = (props) => {
     setViewCart((prev) => !prev);
   };
 
-  const updateCartList = (newOrder, incFlag = false) => {
+  const updateCartList = (newOrder, cartIncDecFlag = false) => {
     setCartList((prev) => {
       let curInfo = null;
       const intermediate = prev.filter((o, i) => {
@@ -65,7 +65,7 @@ export const MealContextProvider = (props) => {
       });
       if (newOrder.amount > 0) intermediate.unshift(newOrder);
       //increement logic
-      if (!incFlag && curInfo && newOrder.amount >= curInfo.amount)
+      if (!cartIncDecFlag && curInfo && intermediate.length > 0)
         intermediate[0].amount += curInfo.amount;
       return intermediate;
     });

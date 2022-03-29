@@ -15,7 +15,7 @@ const CartContents = (props) => {
     if (newAmount === 0)
       mealCtx.updateMealsAmount({ ...props.meal }, newAmount);
     const newContent = { ...props.meal, amount: newAmount };
-    mealCtx.updateCartList(newContent);
+    mealCtx.updateCartList(newContent, true);
   };
 
   useEffect(() => {

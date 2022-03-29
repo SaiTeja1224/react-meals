@@ -11,7 +11,7 @@ const Input = (props) => {
         id={props.id}
         onChange={props.onChange}
         value={props.value}
-        min={props.type === "number" ? 0 : ""}
+        min={props.type === "number" ? 1 : ""}
         max={props.type === "number" ? 10 : ""}
         className={props.className && props.className}
       />
