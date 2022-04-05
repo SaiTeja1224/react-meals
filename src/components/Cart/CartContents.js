@@ -1,10 +1,11 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import MealContext from "../../context/MealContext";
 import Button from "../UI/Button/Button";
 import classes from "./CartContents.module.css";
 
 const CartContents = (props) => {
   const mealCtx = useContext(MealContext);
+
   const increaseAmount = () => {
     const newAmount = props.meal.amount + 1;
     const newContent = { ...props.meal, amount: newAmount };
@@ -12,15 +13,9 @@ const CartContents = (props) => {
   };
   const decreaseAmount = () => {
     const newAmount = props.meal.amount - 1;
-    if (newAmount === 0)
-      mealCtx.updateMealsAmount({ ...props.meal }, newAmount);
     const newContent = { ...props.meal, amount: newAmount };
     mealCtx.updateCartList(newContent, true);
   };
-
-  useEffect(() => {
-    mealCtx.updateMealsAmount({ ...props.meal }, props.meal.amount);
-  }, [mealCtx.cartList, props.meal]);
   return (
     <>
       <li className={classes["cart-content-li"]}>
