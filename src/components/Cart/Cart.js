@@ -49,7 +49,8 @@ const Cart = (props) => {
             usedFor="cart-btn-order"
             disabled={!total}
             onClick={() => {
-              alert("Ordering....");
+              mealCtx.showOrderForm();
+              mealCtx.cartControl();
             }}
           >
             Order

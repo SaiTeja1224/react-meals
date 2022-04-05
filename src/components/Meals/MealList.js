@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import MealContext from "../../context/MealContext";
 import Card from "../UI/Card/Card";
+import Button from "../UI/Button/Button";
 import Meal from "./Meal";
 import classes from "./MealList.module.css";
 
@@ -15,7 +16,17 @@ const MealList = (props) => {
   }
   return (
     <Card className={classes["meal-list"]}>
-      <ul>{content}</ul>
+      {mealCtx.error && <p className="error-text">{mealCtx.error}</p>}
+      {!mealCtx.isLoading && !mealCtx.error && <ul>{content}</ul>}
+      {mealCtx.isLoading && !mealCtx.error && (
+        <p className="loading-text">Loading... </p>
+      )}
+      <div className={classes["add-div"]}>
+        <span>Add a New Meal</span>
+        <Button usedFor="add-meal" onClick={mealCtx.showMealForm}>
+          + Add a new meal
+        </Button>
+      </div>
     </Card>
   );
 };

@@ -98,6 +98,20 @@
   background-color: #992b00;
 }
 
+.add-meal {
+  border-radius: 12px;
+  border: 2px solid white;
+  background-color: rgb(0, 184, 24);
+  color: white;
+  margin: 0.8em 0;
+  padding: 0.7em 3em;
+  transition: background-color ease-in 0.1s;
+}
+
+.add-meal:hover {
+  background-color: rgb(1, 121, 17);
+}
+
 @media (max-width: 1056px) {
   .add-amount {
     margin-left: 1em;

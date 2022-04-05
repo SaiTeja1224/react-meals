@@ -39,3 +39,16 @@ textarea,
 label {
   font: inherit;
 }
+
+.loading-text {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 2em 0;
+  text-align: center;
+}
+
+.error-text {
+  text-align: center;
+  color: red;
+  font-size: 1.3rem;
+}

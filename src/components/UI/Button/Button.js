@@ -9,6 +9,7 @@ const Button = (props) => {
     classStyle = classes["cart-btn-order"];
   if (props.usedFor === "cart-btn-close")
     classStyle = classes["cart-btn-close"];
+  if (props.usedFor === "add-meal") classStyle = classes["add-meal"];
   return (
     <button
       type={props.type ? "submit" : "button"}
