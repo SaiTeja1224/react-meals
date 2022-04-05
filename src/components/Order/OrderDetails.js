@@ -74,13 +74,15 @@ const OrderDetails = () => {
   };
 
   const nameErrorText = nameHasError && (
-    <p className={classes["error-text"]}>Please enter a valid name</p>
+    <p className={classes["error-text"]}>Please enter a valid Name</p>
   );
   const contactErrorText = contactHasError && (
-    <p className={classes["error-text"]}>Please enter a valid description</p>
+    <p className={classes["error-text"]}>
+      Please enter a valid Contact (10 digit)
+    </p>
   );
   const addressErrorText = addressHasError && (
-    <p className={classes["error-text"]}>Please enter a valid price</p>
+    <p className={classes["error-text"]}>Please enter a valid Address</p>
   );
 
   const nameClasses = nameHasError
