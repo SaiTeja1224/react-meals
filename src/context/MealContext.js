@@ -34,7 +34,7 @@ export const MealContextProvider = (props) => {
   const [isLoading, error, getMealsRequest] = useHttp();
   const request = useMemo(() => {
     return {
-      url: "https://react-meals-de9d8-default-rtdb.asia-southeast1.firebasedatabase.app/meals.json",
+      url: process.env.REACT_APP_MEAL_URL,
       method: "GET",
       headers: { "Content-Type": "application/json" },
     };

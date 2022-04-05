@@ -58,7 +58,7 @@ const OrderDetails = () => {
         meals: mealCtx.cartList,
       };
       const request = {
-        url: "https://react-meals-de9d8-default-rtdb.asia-southeast1.firebasedatabase.app/orders.json",
+        url: process.env.REACT_APP_ORDER_URL,
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newData),
